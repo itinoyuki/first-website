@@ -27,17 +27,18 @@ span{
     color: var(--cor-destaque-texto);
 }
 
+.cabecalho{
+    padding: 2% 0 0 13%;
+}
+
 .cabecalho__menu{
     display: flex;
     gap: 80px;
-    padding: 2% 0 0 13%;
-    
-    
 }
 
 .cabecalho__menu__link{
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     text-decoration: none;
     color: var(--cor-destaque-texto);
@@ -48,9 +49,10 @@ span{
     display: flex;
     align-items: center;
     padding: 6% 13%;
+    gap: 82px;
 }
 .conteudos__apresentacao{
-    width: 615px;
+    width: 50%;
     display:flex;
     flex-direction: column;
     gap: 40px;
@@ -58,12 +60,12 @@ span{
 
 
 .conteudos__apresentacao__titulo{
-    font-size: 30px;
+    font-size: 1.875rem;
     font-family: var(--fonte-primaria);
 }
 
 .conteudos__apresentacao__texto{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fonte-secundaria);
 }
 
@@ -79,36 +81,37 @@ span{
 .conteudos__links__subtitulo{
     color: var(--cor-texto);
     font-family: var(--fonte-primaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
 
 
-.conteudos__links__link{
+.conteudos__links__navegacao{
     /* background-color: #18fbf0 ; */
     display: flex;
     justify-content:center;
     gap: 16px;
-    width: 378px;
+    width: 50%;
     text-align: center;
     border-radius: 8px;
     padding:21.5px 0;
     color: var(--cor-texto);
     text-decoration: none;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     font-family: var(--fonte-secundaria);
     border: 2px solid var(--cor-destaque-texto);
 }
 
-.conteudos__links__link:hover{
+.conteudos__links__navegacao:hover{
     background-color: var(--cor-hover);
     padding: 3%;
 }
 
 .foto{
     border-radius: 16px;
+    width: 50%;
 }
 
 .rodape{
@@ -123,7 +126,7 @@ span{
 /* about.html */
 
 .conteudos__curriculo{
-    width: 615px;
+    width: 50%;
     display:flex;
     flex-direction: column;
     gap: 40px;
@@ -134,14 +137,14 @@ span{
 .conteudos__titulo1{
     color: var(--cor-titulo-curriculo);
     font-family: var(--fonte-primaria);
-    font-size: 30px;
+    font-size: 1.875rem;
 }
 
 
 .conteudos__titulo{
     color: var(--cor-titulo-curriculo);
     font-family: var(--fonte-primaria);
-    font-size: 30px;
+    font-size: 1.875rem;
 }
 
 .ul{
@@ -153,4 +156,26 @@ span{
     line-height: 10px;
 }
 
+
+@media(max-width:1100px){
+    .cabecalho{
+        padding:10%;
+    }
+
+    .cabecalho__menu{
+        justify-content: center;
+    }
+
+    .conteudos{
+        flex-direction: column-reverse;
+        padding: 6%;
+    }
+   
+    .conteudos__apresentacao{
+        width:auto;
+    }
+    .conteudos__curriculo{
+        width:auto;
+    }
+}
 
